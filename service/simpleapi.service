@@ -1,0 +1,10 @@
+<?xml version="1.0" standalone='no'?><!--*-nxml-*-->
+<!DOCTYPE service-group SYSTEM "avahi-service.dtd">
+<service-group>
+    <name replace-wildcards="yes">%h simpleapi</name>
+    <service protocol="ipv4">
+        <type>_http._tcp</type>
+        <port>8000</port>
+        <txt-record>path=/api/v1</txt-record>
+    </service>
+</service-group>
