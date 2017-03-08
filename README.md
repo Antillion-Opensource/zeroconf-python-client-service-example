@@ -10,7 +10,7 @@ The main client will query the network for any services and discover implementat
 
 Start the docker image(s):
 
-    sudo docker run --net=host -it --rm antillion-os/zeroconf-example-service
+    sudo docker run --net=host -it --rm antillionos/zeroconf-example-service
     
 Install the required Python dependencies:
 
@@ -49,3 +49,7 @@ If you can't see your service come up, try `client/browser.py` which will show a
 
 Pass the `--debug` flag if you wish to see the mDNS network traffic; be warned: it's noisy.
 
+
+### Credits
+
+The service Dockerfile is based, in part, on the work from https://github.com/mhaberler/docker-avahi which solves common dbus problems.
